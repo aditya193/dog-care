@@ -48,32 +48,47 @@
 <body>
 
     <!-- navbar-code -->
-    <section class="navigation">
-        <div class="nav-container">
-            <div class="brand">
-                <a href="#!">LOGO</a>
-            </div>
-            <nav>
-                <div class="nav-mobile">
-                    <a id="nav-toggle" href="#!"><span></span></a>
-                </div>
-                <ul class="nav-list">
-                    <!-- Setting the links to #! will ensure that no action takes place on click. -->
-                    <li><a href="#!">Home</a></li>
-                    <li><a href="#!">About</a></li>
-                    <li><a href="#!">Registration</a>
-                        <ul class="nav-dropdown collapse">
-                            <li><a href="#!" data-toggle="modal" data-target="#loginModal">Event 1</a></li>
-                            <li><a href="#!" data-toggle="modal" data-target="#loginModal">Event 2</a></li>
-                            <li><a href="#!" data-toggle="modal" data-target="#loginModal">Event 3</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#!">Image gallery</a></li>
-                    <li><a href="#!">Contact</a></li>
-                </ul>
-            </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="index.html">
+            <i class="fas fa-paw"></i>
+            Dogcare
+        </a>
+        <!-- <a class="navbar-brand" href="#">Dogcare <a href="#!"><img class="img-fluid" height="90" width="90"
+                    src="https://image.freepik.com/free-vector/cute-welsh-corgi-dog-waving-paw-cartoon_42750-623.jpg" a>
+                Dogcare</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#abouts">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Registration
+                    </a>
+                    <div class="dropdown-menu ddm" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#registers">Event 1</a>
+                        <a class="dropdown-item" href="#registers">Event 2</a>
+                        <a class="dropdown-item" href="#registers">Event 3</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="image_gallery.html">Image gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacts">Contact</a>
+                </li>
+            </ul>
         </div>
-    </section>
+    </nav>
+    <!-- navbar-code -->
 
 
     <!-- image-gallery -->
@@ -173,7 +188,15 @@
     </section>
     <!-- image-gallery -->
 
+    <footer id="footer">
+        <i class=" social-icon1 fab fa-twitter"></i>
+        <i class="social-icon1 fab fa-facebook-f"></i>
+        <i class="social-icon1 fab fa-instagram"></i>
+        <i class="social-icon1 fas fa-envelope"></i>
 
+        <p>© Copyright 2020 Aditya Jain</p>
+
+    </footer>
 
     <!-- registration_form -->
     <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -228,46 +251,6 @@
         <!-- registration_form -->
 
 
-
-        <footer class="pt-4 my-md-5 pt-md-5 border-top">
-            <div class="row">
-                <div class="col-12 col-md">
-                    <img class="mb-2" src="/docs/4.5/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
-                    <small class="d-block mb-3 text-muted">&copy; 2017-2020</small>
-                </div>
-                <div class="col-6 col-md">
-                    <h5>Features</h5>
-                    <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="#">Cool stuff</a></li>
-                        <li><a class="text-muted" href="#">Random feature</a></li>
-                        <li><a class="text-muted" href="#">Team feature</a></li>
-                        <li><a class="text-muted" href="#">Stuff for developers</a></li>
-                        <li><a class="text-muted" href="#">Another one</a></li>
-                        <li><a class="text-muted" href="#">Last time</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-md">
-                    <h5>Resources</h5>
-                    <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="#">Resource</a></li>
-                        <li><a class="text-muted" href="#">Resource name</a></li>
-                        <li><a class="text-muted" href="#">Another resource</a></li>
-                        <li><a class="text-muted" href="#">Final resource</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-md">
-                    <h5>About</h5>
-                    <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="#">Team</a></li>
-                        <li><a class="text-muted" href="#">Locations</a></li>
-                        <li><a class="text-muted" href="#">Privacy</a></li>
-                        <li><a class="text-muted" href="#">Terms</a></li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
-
-
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="index.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
@@ -281,5 +264,6 @@
 
 
 </body>
+
 
 </html>
