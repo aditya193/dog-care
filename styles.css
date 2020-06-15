@@ -4,10 +4,11 @@
     font-family: "ubuntu";
     font-size: 3.25rem;
     font-weight: 900;
+    padding-left: 2rem;
 }
 
 .navbar {
-    padding: 1rem 0 1rem 0;
+    padding: 1rem 2rem 1rem 0;
 }
 
 .nav-item {
@@ -45,8 +46,8 @@ body {
   -------------------------------------------------- */
 
 /* Carousel base class */
-.carousel {
-    /* margin-bottom: 4rem; */
+.carousel h1 {
+    font-size: 4rem;
 }
 
 /* Since positioning the image, we need to help out the caption */
@@ -57,7 +58,7 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-    height: 40rem;
+    height: 44rem;
 }
 
 .carousel-item>img {
@@ -65,9 +66,24 @@ body {
     top: 0;
     left: 0;
     min-width: 100%;
-    height: 40rem;
+    height: 44rem;
+    object-fit: cover;
 }
 
+@media (max-width:480px) {
+    .carousel-item>img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        object-fit: cover;
+        height: 45rem;
+    }
+
+    .carousel-item {
+        height: 45rem;
+    }
+}
 
 /* MARKETING CONTENT
   -------------------------------------------------- */
@@ -132,9 +148,18 @@ body {
 
 /* about */
 .about1 {
-    background-color: aquamarine;
+    /* background-image: url(https://image.freepik.com/free-photo/turquoise-concrete-wall-background_23-2148255150.jpg); */
+    background-color: #cbe2b0;
     text-align: center;
     padding: 3rem 2rem 100px 2rem;
+}
+
+.about11 {
+    background-image: url(https://cdn.pixabay.com/photo/2019/04/10/12/40/watercolour-4117017_1280.png);
+}
+
+.about22 {
+    background-image: url(https://cdn.pixabay.com/photo/2019/04/10/12/40/watercolour-4117017_1280.png);
 }
 
 .about1_img {
@@ -143,7 +168,7 @@ body {
 }
 
 .about2 {
-    background-color: yellowgreen;
+    background-color: #fae7cb;
     text-align: center;
     padding: 3rem 2rem 100px 2rem;
 }
@@ -292,7 +317,8 @@ body {
 /* contact us */
 
 .contact {
-    background-color: thistle;
+    background-color: #b4f2e1;
+    /* background-image: url(https://image.freepik.com/free-vector/red-paper-airplane-fly-dark-blue-background_44481-304.jpg); */
 }
 
 .contact_img {
@@ -306,6 +332,7 @@ body {
 
 .social-icon {
     margin: 1.5rem;
+    color: #646464
 }
 
 /* contact us */
@@ -356,7 +383,7 @@ h3 {
 }
 
 h2 {
-    font-size: 1.75em;
+    font-size: 1.5em;
 }
 
 h3 {
@@ -481,12 +508,12 @@ input[type="button"],
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
     background-color: transparent;
     border-radius: 0.5em;
-    border: solid 1px rgba(144, 144, 144, 0.25) !important;
+    border: solid 4px grey !important;
     color: #545454 !important;
     cursor: pointer;
     display: inline-block;
-    font-size: 0.8em;
-    font-weight: 700;
+    font-size: 1.25em;
+    font-weight: 800;
     height: 3.5em;
     letter-spacing: 0.1em;
     line-height: 3.5em;
@@ -793,4 +820,13 @@ label:hover {
 
 .social-icon1 {
     margin: 20px 10px;
+}
+
+body {
+    overflow-x: hidden !important;
+}
+
+.container {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
 }
