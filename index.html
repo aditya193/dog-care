@@ -42,7 +42,7 @@
         }
     </style>
     <!-- Custom styles for this template -->
-    <link href="https://getbootstrap.com/docs/4.5/examples/carousel/carousel.css" rel="stylesheet">
+    <!-- <link href="https://getbootstrap.com/docs/4.5/examples/carousel/carousel.css" rel="stylesheet"> -->
     <link href="https://getbootstrap.com/docs/4.5/examples/pricing/pricing.css" rel="stylesheet">
 </head>
 
@@ -52,7 +52,9 @@
     <section class="navigation">
         <div class="nav-container">
             <div class="brand">
-                <a href="#!">LOGO</a>
+                <a href="#!"><img class="img-fluid" height="90" width="90"
+                        src="https://image.freepik.com/free-vector/cute-welsh-corgi-dog-waving-paw-cartoon_42750-623.jpg"
+                        a> DogCare</a>
             </div>
             <nav>
                 <div class="nav-mobile">
@@ -80,72 +82,79 @@
 
     <!-- slider-code -->
     <main role="main">
-
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <svg class="bd-placeholder-img " width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
-                        <rect width="100%" height="100%" fill="#777" />
-                        <img src="https://www.aspca.org/sites/default/files/styles/feature_slider_1502x700/public/billboard/desktop/june-monthly-poy_052820_homepage.jpg"
-                            alt="First slide">
-                    </svg>
-                    <div class="container">
-                        <div class="carousel-caption text-left">
-                            <h1>Example headline.</h1>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-                                gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+        <div id="home">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner img-fluid">
+                    <div class="carousel-item active">
+                        <svg class="bd-placeholder-img " width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                            preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                            <rect width="100%" height="100%" fill="#777" />
+                            <img src="https://www.aspca.org/sites/default/files/styles/feature_slider_1502x700/public/billboard/desktop/june-monthly-poy_052820_homepage.jpg"
+                                class="img-fluid" alt="First slide">
+                        </svg>
+                        <div class="container">
+                            <div class="carousel-caption text-left">
+                                <h1>Example headline.</h1>
+                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi
+                                    porta
+                                    gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                            preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                            <rect width="100%" height="100%" fill="#777" />
+                            <img class="img-fluid" src="https://www.aspca.org/sites/default/files/difference-banner.jpg"
+                                alt="Second slide">
+                        </svg>
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h1>Another example headline.</h1>
+                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi
+                                    porta
+                                    gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                            preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                            <rect width="100%" height="100%" fill="#777" />
+                            <img class="img-fluid"
+                                src="https://images.unsplash.com/photo-1522276498395-f4f68f7f8454?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80"
+                                alt="third image">
+                        </svg>
+                        <div class="container">
+                            <div class="carousel-caption text-right">
+                                <h1>One more for good measure.</h1>
+                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi
+                                    porta
+                                    gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                <p><a class="btn btn-lg btn-primary" href="image_gallery.html" role="button">Browse
+                                        gallery</a></p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
-                        <rect width="100%" height="100%" fill="#777" />
-                        <img src="https://www.aspca.org/sites/default/files/difference-banner.jpg" alt="Second slide">
-                    </svg>
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>Another example headline.</h1>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-                                gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
-                        <rect width="100%" height="100%" fill="#777" />
-                        <img src="https://images.unsplash.com/photo-1522276498395-f4f68f7f8454?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80"
-                            alt="third image">
-                    </svg>
-                    <div class="container">
-                        <div class="carousel-caption text-right">
-                            <h1>One more for good measure.</h1>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-                                gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                            <p><a class="btn btn-lg btn-primary" href="image_gallery.html" role="button">Browse
-                                    gallery</a></p>
-                        </div>
-                    </div>
-                </div>
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
         </div>
+
         <!-- slider-code -->
 
         <!-- about -->
@@ -153,19 +162,18 @@
         <hr class="featurette-divider ">
 
         <div class="row featurette about1">
-            <div class="col-md-7">
+            <div class="col-md-7 ">
                 <h2 class="featurette-heading">About 1.</h2>
                 <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus minima, blanditiis
                     dignissimos praesentium suscipit soluta assumenda laboriosam nobis deserunt tempore eligendi harum a
                     delectus doloribus mollitia voluptatem eum, neque veritatis rem enim ducimus eveniet in.
                     Exercitationem magnam harum ducimus optio, necessitatibus veritatis illo officia dolore iure in
                     sapiente, sit cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque amet hic natus
-                    nostrum laboriosam! Inventore consequatur blanditiis cum corrupti eos. Officiis molestias deserunt
-                    quos explicabo esse, consectetur minima ullam amet.</p>
+                    nostrum laboriosam! Inventore consequatur blanditiis cum corrupti eos.</p>
             </div>
             <div class="col-md-5">
                 <img src="https://dogisgood-f7378986.cdn.sitedistrict.com/wp-content/uploads/2019/06/HOMEPAGEBLOCK.jpg?fsum=f87709ea1a60"
-                    alt="">
+                    class="img-fluid about1_img" alt="">
             </div>
         </div>
 
@@ -182,84 +190,86 @@
                     delectus doloribus mollitia voluptatem eum, neque veritatis rem enim ducimus eveniet in.
                     Exercitationem magnam harum ducimus optio, necessitatibus veritatis illo officia dolore iure in
                     sapiente, sit cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque amet hic natus
-                    nostrum laboriosam! Inventore consequatur blanditiis cum corrupti eos. Officiis molestias deserunt
-                    quos explicabo esse, consectetur minima ullam amet.</p>
+                    nostrum laboriosam! Inventore consequatur blanditiis cum corrupti eos.</p>
             </div>
             <div class="col-md-5 order-md-1">
                 <img src="https://images.unsplash.com/photo-1507682520764-93440a60e9b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=925&q=80"
-                    alt="">
+                    class="img-fluid " alt="">
             </div>
         </div>
         <!-- about 2 -->
 
 
         <!-- bootstrap cards -->
-
-        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-            <h1 class="display-4">Events</h1>
-            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ut mollitia sequi provident.
-                Minus, nisi magni ipsum ea voluptas cupiditate?Lorem ipsum dolor sit amet.</p>
-        </div>
-
-        <div class="container">
-            <div class="card-deck mb-3 text-center">
-                <div class="card mb-4 shadow-sm">
-                    <div class="card-header">
-                        <h4 class="my-0 font-weight-normal">Event 1</h4>
-                    </div>
-                    <div class="card-body">
-                        <h1 class="card-title pricing-card-title">Lorem.</h1>
-                        <ul class="list-unstyled mt-3 mb-4">
-                            <li>Lorem, ipsum dolor.</li>
-                            <li>Lorem, ipsum dolor.</li>
-                            <li>Lorem, ipsum dolor.</li>
-                            <li>Lorem, ipsum dolor.</li>
-                        </ul>
-                        <button type="button" class="btn btn-info btn-round" data-toggle="modal"
-                            data-target="#loginModal">
-                            Register
-                        </button>
-                    </div>
-                </div>
-                <div class="card mb-4 shadow-sm">
-                    <div class="card-header">
-                        <h4 class="my-0 font-weight-normal">Event 2</h4>
-                    </div>
-                    <div class="card-body">
-                        <h1 class="card-title pricing-card-title">Lorem.</h1>
-                        <ul class="list-unstyled mt-3 mb-4">
-                            <li>Lorem, ipsum dolor.</li>
-                            <li>Lorem, ipsum dolor.</li>
-                            <li>Lorem, ipsum dolor.</li>
-                            <li>Lorem, ipsum dolor.</li>
-                        </ul>
-                        <button type="button" class="btn btn-info btn-round" data-toggle="modal"
-                            data-target="#loginModal">
-                            Register
-                        </button>
-                    </div>
-                </div>
-                <div class="card mb-4 shadow-sm">
-                    <div class="card-header">
-                        <h4 class="my-0 font-weight-normal">Event 3</h4>
-                    </div>
-                    <div class="card-body">
-                        <h1 class="card-title pricing-card-title">Lorem.</h1>
-                        <ul class="list-unstyled mt-3 mb-4">
-                            <li>Lorem, ipsum dolor.</li>
-                            <li>Lorem, ipsum dolor.</li>
-                            <li>Lorem, ipsum dolor.</li>
-                            <li>Lorem, ipsum dolor.</li>
-                        </ul>
-                        <button type="button" class="btn btn-info btn-round" data-toggle="modal"
-                            data-target="#loginModal">
-                            Register
-                        </button>
-                    </div>
-                </div>
+        <div class="cards">
+            <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+                <h1 class="display-4">Events</h1>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ut mollitia sequi
+                    provident.
+                    Minus, nisi magni ipsum ea voluptas cupiditate?Lorem ipsum dolor sit amet.</p>
             </div>
 
+            <div class="container">
+                <div class="card-deck mb-3 text-center">
+                    <div class="card mb-4 shadow-sm card1">
+                        <div class="card-header">
+                            <h4 class="my-0 font-weight-normal">Event 1</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">Lorem.</h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Lorem, ipsum dolor.</li>
+                                <li>Lorem, ipsum dolor.</li>
+                                <li>Lorem, ipsum dolor.</li>
+                                <li>Lorem, ipsum dolor.</li>
+                            </ul>
+                            <button type="button" class="btn btn-info btn-round" data-toggle="modal"
+                                data-target="#loginModal">
+                                Register
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card mb-4 shadow-sm card2">
+                        <div class="card-header">
+                            <h4 class="my-0 font-weight-normal">Event 2</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">Lorem.</h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Lorem, ipsum dolor.</li>
+                                <li>Lorem, ipsum dolor.</li>
+                                <li>Lorem, ipsum dolor.</li>
+                                <li>Lorem, ipsum dolor.</li>
+                            </ul>
+                            <button type="button" class="btn btn-info btn-round" data-toggle="modal"
+                                data-target="#loginModal">
+                                Register
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card mb-4 shadow-sm card3">
+                        <div class="card-header">
+                            <h4 class="my-0 font-weight-normal">Event 3</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">Lorem.</h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Lorem, ipsum dolor.</li>
+                                <li>Lorem, ipsum dolor.</li>
+                                <li>Lorem, ipsum dolor.</li>
+                                <li>Lorem, ipsum dolor.</li>
+                            </ul>
+                            <button type="button" class="btn btn-info btn-round" data-toggle="modal"
+                                data-target="#loginModal">
+                                Register
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
+
         <!-- bootstrapcards -->
 
 
@@ -274,19 +284,19 @@
                     <div class="row features">
                         <div class="feature-box col-lg-4">
                             <i class="fas fa-envelope-open-text fa-4x"></i>
-                            <h3>Easy to use.</h3>
+                            <h3>Mail Us.</h3>
                             <p>Lorem ipsum dolor.</p>
                         </div>
 
                         <div class="feature-box col-lg-4 ">
                             <i class="fas fa-map-marker-alt fa-4x"></i>
-                            <h3>Elite Clientele</h3>
+                            <h3>Address.</h3>
                             <p>Lorem ipsum dolor sit amet.</p>
                         </div>
 
                         <div class="feature-box col-lg-4">
                             <i class="fas fa-phone fa-4x"></i>
-                            <h3> Guaranteed to work.</h3>
+                            <h3> Call Us.</h3>
                             <p>Lorem, ipsum.
                             </p>
                         </div>
@@ -365,7 +375,7 @@
 
 
         <!-- footer -->
-        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <footer class="pt-4 my-md-5 pt-md-5 ">
             <div class="row">
                 <div class="col-12 col-md">
                     <img class="mb-2" src="/docs/4.5/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
