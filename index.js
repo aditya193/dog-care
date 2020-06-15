@@ -125,3 +125,7 @@ $(document).ready(function ($) {
 });
 
 // contact form
+
+AOS.init({
+    duration: 1200,
+})
