@@ -318,16 +318,19 @@ body {
 
 .contact {
     background-color: #b4f2e1;
+    text-align: center;
     /* background-image: url(https://image.freepik.com/free-vector/red-paper-airplane-fly-dark-blue-background_44481-304.jpg); */
 }
 
 .contact_img {
-    height: 43rem;
-    padding-top: 4rem 0 4rem 6rem;
+    height: 48rem;
+    padding-top: 6rem 0 4rem 6rem;
 }
 
 .contacth2 {
-    text-align: center;
+    padding-top: 2rem;
+    font-size: 4rem;
+    font-weight: 600;
 }
 
 .social-icon {
