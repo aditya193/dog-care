@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/39e836f7cb.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/4.5/examples/carousel/carousel.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/4.5/examples/pricing/pricing.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- navbar-code -->
+    <section class="navigation">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="#!">LOGO</a>
+            </div>
+            <nav>
+                <div class="nav-mobile">
+                    <a id="nav-toggle" href="#!"><span></span></a>
+                </div>
+                <ul class="nav-list">
+                    <!-- Setting the links to #! will ensure that no action takes place on click. -->
+                    <li><a href="#!">Home</a></li>
+                    <li><a href="#!">About</a></li>
+                    <li><a href="#!">Registration</a>
+                        <ul class="nav-dropdown collapse">
+                            <li><a href="#!" data-toggle="modal" data-target="#loginModal">Event 1</a></li>
+                            <li><a href="#!" data-toggle="modal" data-target="#loginModal">Event 2</a></li>
+                            <li><a href="#!" data-toggle="modal" data-target="#loginModal">Event 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#!">Image gallery</a></li>
+                    <li><a href="#!">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+
+    <!-- image-gallery -->
+    <section class="gallery-block cards-gallery">
+        <div class="container">
+            <div class="heading">
+                <h2>Image Gallery</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox"
+                            href="https://scontent-bom1-2.xx.fbcdn.net/v/t1.0-9/13083305_1301247389892615_5816032123609844248_n.jpg?_nc_cat=109&_nc_sid=85a577&_nc_oc=AQkL3eio2rnQDCktc2Tfeyfaf1PcFf1UoBFHF2Pu59RccyFpG8ZCnlKNBJjSnqe6vDg&_nc_ht=scontent-bom1-2.xx&oh=7702556c53210aa469a749d8a570d6ad&oe=5F0B1552"><img
+                                src="https://scontent-bom1-2.xx.fbcdn.net/v/t1.0-9/13083305_1301247389892615_5816032123609844248_n.jpg?_nc_cat=109&_nc_sid=85a577&_nc_oc=AQkL3eio2rnQDCktc2Tfeyfaf1PcFf1UoBFHF2Pu59RccyFpG8ZCnlKNBJjSnqe6vDg&_nc_ht=scontent-bom1-2.xx&oh=7702556c53210aa469a749d8a570d6ad&oe=5F0B1552"
+                                class="card-img-top"></a>
+                        <div class="card-body">
+                            <h6>Lorem Ipsum</h6>
+                            <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Nunc quam urna.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox"
+                            href="https://www.thelabradorsite.com/wp-content/uploads/2019/04/When-Do-Puppies-Stop-Biting-And-How-To-Cope-With-A-Teething-Lab-Puppy-LS-long-696x377.jpg"><img
+                                src="https://www.thelabradorsite.com/wp-content/uploads/2019/04/When-Do-Puppies-Stop-Biting-And-How-To-Cope-With-A-Teething-Lab-Puppy-LS-long-696x377.jpg"
+                                class="card-img-top"></a>
+                        <div class="card-body">
+                            <h6>Lorem Ipsum</h6>
+                            <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Nunc quam urna.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox"
+                            href="https://resc-files-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/large/public/2018-12/Puppy-Bear-0334LF_1.jpg?itok=xvaEzX9g"><img
+                                src="https://resc-files-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/large/public/2018-12/Puppy-Bear-0334LF_1.jpg?itok=xvaEzX9g"
+                                class="card-img-top"></a>
+                        <div class="card-body">
+                            <h6>Lorem Ipsum</h6>
+                            <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Nunc quam urna.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox"
+                            href="https://ichef.bbci.co.uk/news/660/cpsprodpb/D35E/production/_106801145_puppies.jpg"><img
+                                src="https://ichef.bbci.co.uk/news/660/cpsprodpb/D35E/production/_106801145_puppies.jpg"
+                                class="card-img-top"></a>
+                        <div class="card-body">
+                            <h6>Lorem Ipsum</h6>
+                            <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Nunc quam urna.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="https://images.unsplash.com/photo-1571999001321-f54197a02cc8"><img
+                                src="https://images.unsplash.com/photo-1571999001321-f54197a02cc8"
+                                class="card-img-top"></a>
+                        <div class="card-body">
+                            <h6>Lorem Ipsum</h6>
+                            <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Nunc quam urna.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox"
+                            href="https://images.unsplash.com/photo-1578830122871-774ab1aedf2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"><img
+                                src="https://images.unsplash.com/photo-1578830122871-774ab1aedf2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                                class="card-img-top"></a>
+                        <div class="card-body">
+                            <h6>Lorem Ipsum</h6>
+                            <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Nunc quam urna.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- image-gallery -->
+
+
+
+    <!-- registration_form -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-title text-center">
+                        <h4>Login</h4>
+                    </div>
+                    <div class="d-flex flex-column text-center">
+                        <form>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email1"
+                                    placeholder="Your email address...">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="password1"
+                                    placeholder="Your password...">
+                            </div>
+                            <button type="button" class="btn btn-info btn-block btn-round">Login</button>
+                        </form>
+
+                        <div class="text-center text-muted delimiter">or use a social network</div>
+                        <div class="d-flex justify-content-center social-buttons">
+                            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip"
+                                data-placement="top" title="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip"
+                                data-placement="top" title="Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip"
+                                data-placement="top" title="Linkedin">
+                                <i class="fab fa-linkedin"></i>
+                            </button>
+                            </di>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <div class="signup-section">Not a member yet? <a href="#a" class="text-info"> Sign Up</a>.</div>
+                </div>
+            </div>
+        </div>
+        <!-- registration_form -->
+
+
+
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <img class="mb-2" src="/docs/4.5/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
+                    <small class="d-block mb-3 text-muted">&copy; 2017-2020</small>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Features</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Cool stuff</a></li>
+                        <li><a class="text-muted" href="#">Random feature</a></li>
+                        <li><a class="text-muted" href="#">Team feature</a></li>
+                        <li><a class="text-muted" href="#">Stuff for developers</a></li>
+                        <li><a class="text-muted" href="#">Another one</a></li>
+                        <li><a class="text-muted" href="#">Last time</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Resources</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Resource</a></li>
+                        <li><a class="text-muted" href="#">Resource name</a></li>
+                        <li><a class="text-muted" href="#">Another resource</a></li>
+                        <li><a class="text-muted" href="#">Final resource</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>About</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Team</a></li>
+                        <li><a class="text-muted" href="#">Locations</a></li>
+                        <li><a class="text-muted" href="#">Privacy</a></li>
+                        <li><a class="text-muted" href="#">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="index.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
+        <script>
+            baguetteBox.run('.cards-gallery', {
+                animation: 'slideIn'
+            });
+        </script>
+
+
+
+
+</body>
+
+</html>
