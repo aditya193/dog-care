@@ -49,34 +49,46 @@
 <body>
 
     <!-- navbar-code -->
-    <section class="navigation">
-        <div class="nav-container">
-            <div class="brand">
-                <a href="#!"><img class="img-fluid" height="90" width="90"
-                        src="https://image.freepik.com/free-vector/cute-welsh-corgi-dog-waving-paw-cartoon_42750-623.jpg"
-                        a> DogCare</a>
-            </div>
-            <nav>
-                <div class="nav-mobile">
-                    <a id="nav-toggle" href="#!"><span></span></a>
-                </div>
-                <ul class="nav-list">
-                    <!-- Setting the links to #! will ensure that no action takes place on click. -->
-                    <li><a href="#! ">Home</a></li>
-                    <li><a href="#!">About</a></li>
-                    <li><a href="#!">Registration</a>
-                        <ul class="nav-dropdown">
-                            <li><a href="#!" data-toggle="modal" data-target="#loginModal">Event 1</a></li>
-                            <li><a href="#!" data-toggle="modal" data-target="#loginModal">Event 2</a></li>
-                            <li><a href="#!" data-toggle="modal" data-target="#loginModal">Event 3</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="image_gallery.html">Image gallery</a></li>
-                    <li><a href="#!">Contact</a></li>
-                </ul>
-            </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="index.html">
+            <i class="fas fa-paw"></i>
+            Dogcare
+        </a>
+        <!-- <a class="navbar-brand" href="#">Dogcare <a href="#!"><img class="img-fluid" height="90" width="90"
+                    src="https://image.freepik.com/free-vector/cute-welsh-corgi-dog-waving-paw-cartoon_42750-623.jpg" a>
+                Dogcare</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#abouts">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Registration
+                    </a>
+                    <div class="dropdown-menu ddm" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#registers">Event 1</a>
+                        <a class="dropdown-item" href="#registers">Event 2</a>
+                        <a class="dropdown-item" href="#registers">Event 3</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="image_gallery.html">Image gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacts">Contact</a>
+                </li>
+            </ul>
         </div>
-    </section>
+    </nav>
     <!-- navbar-code -->
 
 
@@ -158,24 +170,28 @@
         <!-- slider-code -->
 
         <!-- about -->
+        <div id="abouts">
+            <hr class="featurette-divider ">
 
-        <hr class="featurette-divider ">
-
-        <div class="row featurette about1">
-            <div class="col-md-7 ">
-                <h2 class="featurette-heading">About 1.</h2>
-                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus minima, blanditiis
-                    dignissimos praesentium suscipit soluta assumenda laboriosam nobis deserunt tempore eligendi harum a
-                    delectus doloribus mollitia voluptatem eum, neque veritatis rem enim ducimus eveniet in.
-                    Exercitationem magnam harum ducimus optio, necessitatibus veritatis illo officia dolore iure in
-                    sapiente, sit cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque amet hic natus
-                    nostrum laboriosam! Inventore consequatur blanditiis cum corrupti eos.</p>
-            </div>
-            <div class="col-md-5">
-                <img src="https://dogisgood-f7378986.cdn.sitedistrict.com/wp-content/uploads/2019/06/HOMEPAGEBLOCK.jpg?fsum=f87709ea1a60"
-                    class="img-fluid about1_img" alt="">
+            <div class="row featurette about1">
+                <div class="col-md-7 ">
+                    <h2 class="featurette-heading">About 1.</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus minima, blanditiis
+                        dignissimos praesentium suscipit soluta assumenda laboriosam nobis deserunt tempore eligendi
+                        harum a
+                        delectus doloribus mollitia voluptatem eum, neque veritatis rem enim ducimus eveniet in.
+                        Exercitationem magnam harum ducimus optio, necessitatibus veritatis illo officia dolore iure in
+                        sapiente, sit cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque amet hic
+                        natus
+                        nostrum laboriosam! Inventore consequatur blanditiis cum corrupti eos.</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="https://dogisgood-f7378986.cdn.sitedistrict.com/wp-content/uploads/2019/06/HOMEPAGEBLOCK.jpg?fsum=f87709ea1a60"
+                        class="img-fluid about1_img" alt="">
+                </div>
             </div>
         </div>
+
 
         <!-- about -->
 
@@ -201,216 +217,196 @@
 
 
         <!-- bootstrap cards -->
-        <div class="cards">
-            <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-                <h1 class="display-4">Events</h1>
-                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ut mollitia sequi
-                    provident.
-                    Minus, nisi magni ipsum ea voluptas cupiditate?Lorem ipsum dolor sit amet.</p>
-            </div>
 
-            <div class="container">
-                <div class="card-deck mb-3 text-center">
-                    <div class="card mb-4 shadow-sm card1">
-                        <div class="card-header">
-                            <h4 class="my-0 font-weight-normal">Event 1</h4>
-                        </div>
-                        <div class="card-body">
-                            <h1 class="card-title pricing-card-title">Lorem.</h1>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>Lorem, ipsum dolor.</li>
-                                <li>Lorem, ipsum dolor.</li>
-                                <li>Lorem, ipsum dolor.</li>
-                                <li>Lorem, ipsum dolor.</li>
-                            </ul>
-                            <button type="button" class="btn btn-info btn-round" data-toggle="modal"
-                                data-target="#loginModal">
-                                Register
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card mb-4 shadow-sm card2">
-                        <div class="card-header">
-                            <h4 class="my-0 font-weight-normal">Event 2</h4>
-                        </div>
-                        <div class="card-body">
-                            <h1 class="card-title pricing-card-title">Lorem.</h1>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>Lorem, ipsum dolor.</li>
-                                <li>Lorem, ipsum dolor.</li>
-                                <li>Lorem, ipsum dolor.</li>
-                                <li>Lorem, ipsum dolor.</li>
-                            </ul>
-                            <button type="button" class="btn btn-info btn-round" data-toggle="modal"
-                                data-target="#loginModal">
-                                Register
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card mb-4 shadow-sm card3">
-                        <div class="card-header">
-                            <h4 class="my-0 font-weight-normal">Event 3</h4>
-                        </div>
-                        <div class="card-body">
-                            <h1 class="card-title pricing-card-title">Lorem.</h1>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>Lorem, ipsum dolor.</li>
-                                <li>Lorem, ipsum dolor.</li>
-                                <li>Lorem, ipsum dolor.</li>
-                                <li>Lorem, ipsum dolor.</li>
-                            </ul>
-                            <button type="button" class="btn btn-info btn-round" data-toggle="modal"
-                                data-target="#loginModal">
-                                Register
-                            </button>
-                        </div>
-                    </div>
+        <div id="registers">
+            <div class="cards">
+                <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+                    <h1 class="display-4">Events</h1>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ut mollitia sequi
+                        provident.
+                        Minus, nisi magni ipsum ea voluptas cupiditate?Lorem ipsum dolor sit amet.</p>
                 </div>
 
+                <div class="container">
+                    <div class="card-deck mb-3 text-center">
+                        <div class="card mb-4 shadow-sm card1">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-normal">Event 1</h4>
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">Lorem.</h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>Lorem, ipsum dolor.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                </ul>
+                                <button type="button" class="btn btn-info btn-round" data-toggle="modal"
+                                    data-target="#loginModal">
+                                    Register
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card mb-4 shadow-sm card2">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-normal">Event 2</h4>
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">Lorem.</h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>Lorem, ipsum dolor.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                </ul>
+                                <button type="button" class="btn btn-info btn-round" data-toggle="modal"
+                                    data-target="#loginModal">
+                                    Register
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card mb-4 shadow-sm card3">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-normal">Event 3</h4>
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">Lorem.</h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>Lorem, ipsum dolor.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                </ul>
+                                <button type="button" class="btn btn-info btn-round" data-toggle="modal"
+                                    data-target="#loginModal">
+                                    Register
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
+
 
         <!-- bootstrapcards -->
 
 
         <!-- contact-us -->
-        <hr class="featurette-divider ">
 
-        <div class="row featurette contact">
-            <div class="col-md-7 contacth2">
-                <h2 class="featurette-heading ">Contact Us.</h2>
-                <section id="features">
+        <div id="contacts">
+            <hr class="featurette-divider ">
 
-                    <div class="row features">
-                        <div class="feature-box col-lg-4">
-                            <i class="fas fa-envelope-open-text fa-4x"></i>
-                            <h3>Mail Us.</h3>
-                            <p>Lorem ipsum dolor.</p>
-                        </div>
+            <div class="row featurette contact">
+                <div class="col-md-7 contacth2">
+                    <h2 class="featurette-heading ">Contact Us.</h2>
+                    <section id="features">
 
-                        <div class="feature-box col-lg-4 ">
-                            <i class="fas fa-map-marker-alt fa-4x"></i>
-                            <h3>Address.</h3>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-
-                        <div class="feature-box col-lg-4">
-                            <i class="fas fa-phone fa-4x"></i>
-                            <h3> Call Us.</h3>
-                            <p>Lorem, ipsum.
-                            </p>
-                        </div>
-                    </div>
-
-                    <i class=" social-icon fab fa-twitter fa-2x"></i>
-                    <i class="social-icon fab fa-facebook-f fa-2x"></i>
-                    <i class="social-icon fab fa-instagram fa-2x"></i>
-                    <i class="social-icon fas fa-envelope fa-2x"></i>
-
-
-                    <div class="contact-container">
-                        <h2>Feel free to get in touch.</h2>
-                        <ul class="actions">
-                            <li><a href="#" id="contact" class="button big">Contact Us</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="cd-popup contact" role="alert">
-                        <form name="contactform" id="contactform" class="contact-form">
-                            <div class="cd-popup-container" style="">
-                                <p style="">
-                                    <a href="" class="cd-popup-close cd-close-button">
-                                        <i class="fa fa-times" style="pointer-events:none;"></i>
-                                    </a>
-                                </p>
-
-                                <div class="name">
-                                    <label for="name">Name</label>
-                                    <input type="text" id="name" name="name" />
-                                </div>
-                                <div class="email">
-                                    <label for="email">Email</label>
-                                    <input type="text" id="email" name="email" />
-                                </div>
-                                <div class="message">
-                                    <label for="message">Message</label>
-                                    <textarea name="message" id="message" name="message"></textarea>
-                                </div>
-                                <br>
-                                <div style="text-align:left">
-                                    <input type="checkbox" id="human" name="human" />
-                                    <label for="human">I am a human and not a robot.</label>
-                                </div>
-                                <br>
-                                <div class="submit">
-                                    <p class="user-message" id="contactblurb"> Questions, suggestions, and general
-                                        comments are all welcome!</p>
-                                    <input type="submit" name="submit" id="submit" value="Send" />
-                                </div>
+                        <div class="row features">
+                            <div class="feature-box col-lg-4">
+                                <i class="fas fa-envelope-open-text fa-4x"></i>
+                                <h3>Mail Us.</h3>
+                                <p>Lorem ipsum dolor.</p>
                             </div>
-                        </form>
-                    </div>
 
-                    <div class="cd-popup notification" role="alert">
-                        <div class="cd-popup-container">
-                            <a href="" class="cd-popup-close cd-close-button"><i class="fa fa-times"
-                                    style="pointer-events:none;"></i></a>
-                            <p>
-                                <h3 id="notification-text">Thanks for getting in touch!</h3>
-                            </p>
+                            <div class="feature-box col-lg-4 ">
+                                <i class="fas fa-map-marker-alt fa-4x"></i>
+                                <h3>Address.</h3>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+
+                            <div class="feature-box col-lg-4">
+                                <i class="fas fa-phone fa-4x"></i>
+                                <h3> Call Us.</h3>
+                                <p>Lorem, ipsum.
+                                </p>
+                            </div>
                         </div>
-                    </div>
+
+                        <i class=" social-icon fab fa-twitter fa-2x"></i>
+                        <i class="social-icon fab fa-facebook-f fa-2x"></i>
+                        <i class="social-icon fab fa-instagram fa-2x"></i>
+                        <i class="social-icon fas fa-envelope fa-2x"></i>
 
 
-                </section>
-            </div>
-            <div class="col-md-5">
-                <img class="img-fluid contact_img"
-                    src="https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-                    alt="dog img">
+                        <div class="contact-container">
+                            <h2>Feel free to get in touch.</h2>
+                            <ul class="actions">
+                                <li><a href="#" id="contact" class="button big">Contact Us</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="cd-popup contact" role="alert">
+                            <form name="contactform" id="contactform" class="contact-form">
+                                <div class="cd-popup-container" style="">
+                                    <p style="">
+                                        <a href="" class="cd-popup-close cd-close-button">
+                                            <i class="fa fa-times" style="pointer-events:none;"></i>
+                                        </a>
+                                    </p>
+
+                                    <div class="name">
+                                        <label for="name">Name</label>
+                                        <input type="text" id="name" name="name" />
+                                    </div>
+                                    <div class="email">
+                                        <label for="email">Email</label>
+                                        <input type="text" id="email" name="email" />
+                                    </div>
+                                    <div class="message">
+                                        <label for="message">Message</label>
+                                        <textarea name="message" id="message" name="message"></textarea>
+                                    </div>
+                                    <br>
+                                    <div style="text-align:left">
+                                        <input type="checkbox" id="human" name="human" />
+                                        <label for="human">I am a human and not a robot.</label>
+                                    </div>
+                                    <br>
+                                    <div class="submit">
+                                        <p class="user-message" id="contactblurb"> Questions, suggestions, and general
+                                            comments are all welcome!</p>
+                                        <input type="submit" name="submit" id="submit" value="Send" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="cd-popup notification" role="alert">
+                            <div class="cd-popup-container">
+                                <a href="" class="cd-popup-close cd-close-button"><i class="fa fa-times"
+                                        style="pointer-events:none;"></i></a>
+                                <p>
+                                    <h3 id="notification-text">Thanks for getting in touch!</h3>
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </section>
+                </div>
+                <div class="col-md-5">
+                    <img class="img-fluid contact_img"
+                        src="https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                        alt="dog img">
+                </div>
             </div>
         </div>
+
         <!-- contact us -->
 
 
 
         <!-- footer -->
-        <footer class="pt-4 my-md-5 pt-md-5 ">
-            <div class="row">
-                <div class="col-12 col-md">
-                    <img class="mb-2" src="/docs/4.5/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
-                    <small class="d-block mb-3 text-muted">&copy; 2017-2020</small>
-                </div>
-                <div class="col-6 col-md">
-                    <h5>Features</h5>
-                    <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="#">Cool stuff</a></li>
-                        <li><a class="text-muted" href="#">Random feature</a></li>
-                        <li><a class="text-muted" href="#">Team feature</a></li>
-                        <li><a class="text-muted" href="#">Stuff for developers</a></li>
-                        <li><a class="text-muted" href="#">Another one</a></li>
-                        <li><a class="text-muted" href="#">Last time</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-md">
-                    <h5>Resources</h5>
-                    <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="#">Resource</a></li>
-                        <li><a class="text-muted" href="#">Resource name</a></li>
-                        <li><a class="text-muted" href="#">Another resource</a></li>
-                        <li><a class="text-muted" href="#">Final resource</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-md">
-                    <h5>About</h5>
-                    <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="#">Team</a></li>
-                        <li><a class="text-muted" href="#">Locations</a></li>
-                        <li><a class="text-muted" href="#">Privacy</a></li>
-                        <li><a class="text-muted" href="#">Terms</a></li>
-                    </ul>
-                </div>
-            </div>
+        <footer id="footer">
+            <i class=" social-icon1 fab fa-twitter"></i>
+            <i class="social-icon1 fab fa-facebook-f"></i>
+            <i class="social-icon1 fab fa-instagram"></i>
+            <i class="social-icon1 fas fa-envelope"></i>
+
+            <p>© Copyright 2020 Aditya Jain</p>
+
         </footer>
         <!-- footer -->
 
