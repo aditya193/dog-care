@@ -12,6 +12,7 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
     <link rel="stylesheet" href="styles.css">
+
     <script src="https://kit.fontawesome.com/39e836f7cb.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
@@ -59,16 +60,16 @@
                 </div>
                 <ul class="nav-list">
                     <!-- Setting the links to #! will ensure that no action takes place on click. -->
-                    <li><a href="#!">Home</a></li>
+                    <li><a href="#! ">Home</a></li>
                     <li><a href="#!">About</a></li>
                     <li><a href="#!">Registration</a>
                         <ul class="nav-dropdown">
-                            <li><a href="#!">Web Development</a></li>
-                            <li><a href="#!">App Development</a></li>
-                            <li><a href="#!">Graphic Design</a></li>
+                            <li><a href="#!" data-toggle="modal" data-target="#loginModal">Event 1</a></li>
+                            <li><a href="#!" data-toggle="modal" data-target="#loginModal">Event 2</a></li>
+                            <li><a href="#!" data-toggle="modal" data-target="#loginModal">Event 3</a></li>
                         </ul>
                     </li>
-                    <li><a href="#!">Image gallery</a></li>
+                    <li><a href="image_gallery.html">Image gallery</a></li>
                     <li><a href="#!">Contact</a></li>
                 </ul>
             </nav>
@@ -122,7 +123,7 @@
                     <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
                         preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
                         <rect width="100%" height="100%" fill="#777" />
-                        <img src="https://www.rover.com/blog/wp-content/uploads/2014/10/prison-dog-1200x675.jpg"
+                        <img src="https://images.unsplash.com/photo-1522276498395-f4f68f7f8454?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80"
                             alt="third image">
                     </svg>
                     <div class="container">
@@ -130,7 +131,8 @@
                             <h1>One more for good measure.</h1>
                             <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
                                 gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                            <p><a class="btn btn-lg btn-primary" href="image_gallery.html" role="button">Browse
+                                    gallery</a></p>
                         </div>
                     </div>
                 </div>
@@ -152,20 +154,18 @@
 
         <div class="row featurette about1">
             <div class="col-md-7">
-                <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your
-                        mind.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                    euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-                    tellus ac cursus commodo.</p>
+                <h2 class="featurette-heading">About 1.</h2>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus minima, blanditiis
+                    dignissimos praesentium suscipit soluta assumenda laboriosam nobis deserunt tempore eligendi harum a
+                    delectus doloribus mollitia voluptatem eum, neque veritatis rem enim ducimus eveniet in.
+                    Exercitationem magnam harum ducimus optio, necessitatibus veritatis illo officia dolore iure in
+                    sapiente, sit cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque amet hic natus
+                    nostrum laboriosam! Inventore consequatur blanditiis cum corrupti eos. Officiis molestias deserunt
+                    quos explicabo esse, consectetur minima ullam amet.</p>
             </div>
             <div class="col-md-5">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                    height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
-                    focusable="false" role="img" aria-label="Placeholder: 500x500">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
-                        dy=".3em">500x500</text>
-                </svg>
+                <img src="https://dogisgood-f7378986.cdn.sitedistrict.com/wp-content/uploads/2019/06/HOMEPAGEBLOCK.jpg?fsum=f87709ea1a60"
+                    alt="">
             </div>
         </div>
 
@@ -176,227 +176,284 @@
 
         <div class="row featurette about2">
             <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for
-                        yourself.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                    euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-                    tellus ac cursus commodo.</p>
+                <h2 class="featurette-heading">About 2.</h2>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus minima, blanditiis
+                    dignissimos praesentium suscipit soluta assumenda laboriosam nobis deserunt tempore eligendi harum a
+                    delectus doloribus mollitia voluptatem eum, neque veritatis rem enim ducimus eveniet in.
+                    Exercitationem magnam harum ducimus optio, necessitatibus veritatis illo officia dolore iure in
+                    sapiente, sit cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque amet hic natus
+                    nostrum laboriosam! Inventore consequatur blanditiis cum corrupti eos. Officiis molestias deserunt
+                    quos explicabo esse, consectetur minima ullam amet.</p>
             </div>
             <div class="col-md-5 order-md-1">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                    height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
-                    focusable="false" role="img" aria-label="Placeholder: 500x500">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
-                        dy=".3em">500x500</text>
-                </svg>
+                <img src="https://images.unsplash.com/photo-1507682520764-93440a60e9b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=925&q=80"
+                    alt="">
             </div>
         </div>
         <!-- about 2 -->
 
 
-        <!-- image-gallery -->
-        <section class="gallery-block cards-gallery">
-            <div class="container">
-                <div class="heading">
-                    <h2>Card Gallery</h2>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card border-0 transform-on-hover">
-                            <a class="lightbox"
-                                href="https://scontent-bom1-2.xx.fbcdn.net/v/t1.0-9/13083305_1301247389892615_5816032123609844248_n.jpg?_nc_cat=109&_nc_sid=85a577&_nc_oc=AQkL3eio2rnQDCktc2Tfeyfaf1PcFf1UoBFHF2Pu59RccyFpG8ZCnlKNBJjSnqe6vDg&_nc_ht=scontent-bom1-2.xx&oh=7702556c53210aa469a749d8a570d6ad&oe=5F0B1552"><img
-                                    src="https://scontent-bom1-2.xx.fbcdn.net/v/t1.0-9/13083305_1301247389892615_5816032123609844248_n.jpg?_nc_cat=109&_nc_sid=85a577&_nc_oc=AQkL3eio2rnQDCktc2Tfeyfaf1PcFf1UoBFHF2Pu59RccyFpG8ZCnlKNBJjSnqe6vDg&_nc_ht=scontent-bom1-2.xx&oh=7702556c53210aa469a749d8a570d6ad&oe=5F0B1552"
-                                    class="card-img-top"></a>
-                            <div class="card-body">
-                                <h6>Lorem Ipsum</h6>
-                                <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Nunc quam urna.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card border-0 transform-on-hover">
-                            <a class="lightbox"
-                                href="https://www.thelabradorsite.com/wp-content/uploads/2019/04/When-Do-Puppies-Stop-Biting-And-How-To-Cope-With-A-Teething-Lab-Puppy-LS-long-696x377.jpg"><img
-                                    src="https://www.thelabradorsite.com/wp-content/uploads/2019/04/When-Do-Puppies-Stop-Biting-And-How-To-Cope-With-A-Teething-Lab-Puppy-LS-long-696x377.jpg"
-                                    class="card-img-top"></a>
-                            <div class="card-body">
-                                <h6>Lorem Ipsum</h6>
-                                <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Nunc quam urna.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card border-0 transform-on-hover">
-                            <a class="lightbox"
-                                href="https://resc-files-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/large/public/2018-12/Puppy-Bear-0334LF_1.jpg?itok=xvaEzX9g"><img
-                                    src="https://resc-files-prod.s3.us-west-1.amazonaws.com/s3fs-public/styles/large/public/2018-12/Puppy-Bear-0334LF_1.jpg?itok=xvaEzX9g"
-                                    class="card-img-top"></a>
-                            <div class="card-body">
-                                <h6>Lorem Ipsum</h6>
-                                <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Nunc quam urna.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="row">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card border-0 transform-on-hover">
-                            <a class="lightbox"
-                                href="https://ichef.bbci.co.uk/news/660/cpsprodpb/D35E/production/_106801145_puppies.jpg"><img
-                                    src="https://ichef.bbci.co.uk/news/660/cpsprodpb/D35E/production/_106801145_puppies.jpg"
-                                    class="card-img-top"></a>
-                            <div class="card-body">
-                                <h6>Lorem Ipsum</h6>
-                                <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Nunc quam urna.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card border-0 transform-on-hover">
-                            <a class="lightbox" href="https://images.unsplash.com/photo-1571999001321-f54197a02cc8"><img
-                                    src="https://images.unsplash.com/photo-1571999001321-f54197a02cc8"
-                                    class="card-img-top"></a>
-                            <div class="card-body">
-                                <h6>Lorem Ipsum</h6>
-                                <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Nunc quam urna.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card border-0 transform-on-hover">
-                            <a class="lightbox"
-                                href="https://images.unsplash.com/photo-1578830122871-774ab1aedf2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"><img
-                                    src="https://images.unsplash.com/photo-1578830122871-774ab1aedf2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-                                    class="card-img-top"></a>
-                            <div class="card-body">
-                                <h6>Lorem Ipsum</h6>
-                                <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Nunc quam urna.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- image-gallery -->
-
         <!-- bootstrap cards -->
 
         <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-            <h1 class="display-4">Pricing</h1>
-            <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap
-                example. It’s built with default Bootstrap components and utilities with little customization.</p>
+            <h1 class="display-4">Events</h1>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ut mollitia sequi provident.
+                Minus, nisi magni ipsum ea voluptas cupiditate?Lorem ipsum dolor sit amet.</p>
         </div>
 
         <div class="container">
             <div class="card-deck mb-3 text-center">
                 <div class="card mb-4 shadow-sm">
                     <div class="card-header">
-                        <h4 class="my-0 font-weight-normal">Free</h4>
+                        <h4 class="my-0 font-weight-normal">Event 1</h4>
                     </div>
                     <div class="card-body">
-                        <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+                        <h1 class="card-title pricing-card-title">Lorem.</h1>
                         <ul class="list-unstyled mt-3 mb-4">
-                            <li>10 users included</li>
-                            <li>2 GB of storage</li>
-                            <li>Email support</li>
-                            <li>Help center access</li>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem, ipsum dolor.</li>
                         </ul>
-                        <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
+                        <button type="button" class="btn btn-info btn-round" data-toggle="modal"
+                            data-target="#loginModal">
+                            Register
+                        </button>
                     </div>
                 </div>
                 <div class="card mb-4 shadow-sm">
                     <div class="card-header">
-                        <h4 class="my-0 font-weight-normal">Pro</h4>
+                        <h4 class="my-0 font-weight-normal">Event 2</h4>
                     </div>
                     <div class="card-body">
-                        <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+                        <h1 class="card-title pricing-card-title">Lorem.</h1>
                         <ul class="list-unstyled mt-3 mb-4">
-                            <li>20 users included</li>
-                            <li>10 GB of storage</li>
-                            <li>Priority email support</li>
-                            <li>Help center access</li>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem, ipsum dolor.</li>
                         </ul>
-                        <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+                        <button type="button" class="btn btn-info btn-round" data-toggle="modal"
+                            data-target="#loginModal">
+                            Register
+                        </button>
                     </div>
                 </div>
                 <div class="card mb-4 shadow-sm">
                     <div class="card-header">
-                        <h4 class="my-0 font-weight-normal">Enterprise</h4>
+                        <h4 class="my-0 font-weight-normal">Event 3</h4>
                     </div>
                     <div class="card-body">
-                        <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+                        <h1 class="card-title pricing-card-title">Lorem.</h1>
                         <ul class="list-unstyled mt-3 mb-4">
-                            <li>30 users included</li>
-                            <li>15 GB of storage</li>
-                            <li>Phone and email support</li>
-                            <li>Help center access</li>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem, ipsum dolor.</li>
                         </ul>
-                        <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
+                        <button type="button" class="btn btn-info btn-round" data-toggle="modal"
+                            data-target="#loginModal">
+                            Register
+                        </button>
                     </div>
                 </div>
             </div>
 
-            <footer class="pt-4 my-md-5 pt-md-5 border-top">
-                <div class="row">
-                    <div class="col-12 col-md">
-                        <img class="mb-2" src="/docs/4.5/assets/brand/bootstrap-solid.svg" alt="" width="24"
-                            height="24">
-                        <small class="d-block mb-3 text-muted">&copy; 2017-2020</small>
-                    </div>
-                    <div class="col-6 col-md">
-                        <h5>Features</h5>
-                        <ul class="list-unstyled text-small">
-                            <li><a class="text-muted" href="#">Cool stuff</a></li>
-                            <li><a class="text-muted" href="#">Random feature</a></li>
-                            <li><a class="text-muted" href="#">Team feature</a></li>
-                            <li><a class="text-muted" href="#">Stuff for developers</a></li>
-                            <li><a class="text-muted" href="#">Another one</a></li>
-                            <li><a class="text-muted" href="#">Last time</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-md">
-                        <h5>Resources</h5>
-                        <ul class="list-unstyled text-small">
-                            <li><a class="text-muted" href="#">Resource</a></li>
-                            <li><a class="text-muted" href="#">Resource name</a></li>
-                            <li><a class="text-muted" href="#">Another resource</a></li>
-                            <li><a class="text-muted" href="#">Final resource</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-md">
-                        <h5>About</h5>
-                        <ul class="list-unstyled text-small">
-                            <li><a class="text-muted" href="#">Team</a></li>
-                            <li><a class="text-muted" href="#">Locations</a></li>
-                            <li><a class="text-muted" href="#">Privacy</a></li>
-                            <li><a class="text-muted" href="#">Terms</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </footer>
         </div>
         <!-- bootstrapcards -->
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
-        <script>
-            baguetteBox.run('.cards-gallery', {
-                animation: 'slideIn'
-            });
-        </script>
+
+        <!-- contact-us -->
+        <hr class="featurette-divider ">
+
+        <div class="row featurette contact">
+            <div class="col-md-7 contacth2">
+                <h2 class="featurette-heading ">Contact Us.</h2>
+                <section id="features">
+
+                    <div class="row features">
+                        <div class="feature-box col-lg-4">
+                            <i class="fas fa-envelope-open-text fa-4x"></i>
+                            <h3>Easy to use.</h3>
+                            <p>Lorem ipsum dolor.</p>
+                        </div>
+
+                        <div class="feature-box col-lg-4 ">
+                            <i class="fas fa-map-marker-alt fa-4x"></i>
+                            <h3>Elite Clientele</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+
+                        <div class="feature-box col-lg-4">
+                            <i class="fas fa-phone fa-4x"></i>
+                            <h3> Guaranteed to work.</h3>
+                            <p>Lorem, ipsum.
+                            </p>
+                        </div>
+                    </div>
+
+                    <i class=" social-icon fab fa-twitter fa-2x"></i>
+                    <i class="social-icon fab fa-facebook-f fa-2x"></i>
+                    <i class="social-icon fab fa-instagram fa-2x"></i>
+                    <i class="social-icon fas fa-envelope fa-2x"></i>
+
+
+                    <div class="contact-container">
+                        <h2>Feel free to get in touch.</h2>
+                        <ul class="actions">
+                            <li><a href="#" id="contact" class="button big">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="cd-popup contact" role="alert">
+                        <form name="contactform" id="contactform" class="contact-form">
+                            <div class="cd-popup-container" style="">
+                                <p style="">
+                                    <a href="" class="cd-popup-close cd-close-button">
+                                        <i class="fa fa-times" style="pointer-events:none;"></i>
+                                    </a>
+                                </p>
+
+                                <div class="name">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" />
+                                </div>
+                                <div class="email">
+                                    <label for="email">Email</label>
+                                    <input type="text" id="email" name="email" />
+                                </div>
+                                <div class="message">
+                                    <label for="message">Message</label>
+                                    <textarea name="message" id="message" name="message"></textarea>
+                                </div>
+                                <br>
+                                <div style="text-align:left">
+                                    <input type="checkbox" id="human" name="human" />
+                                    <label for="human">I am a human and not a robot.</label>
+                                </div>
+                                <br>
+                                <div class="submit">
+                                    <p class="user-message" id="contactblurb"> Questions, suggestions, and general
+                                        comments are all welcome!</p>
+                                    <input type="submit" name="submit" id="submit" value="Send" />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="cd-popup notification" role="alert">
+                        <div class="cd-popup-container">
+                            <a href="" class="cd-popup-close cd-close-button"><i class="fa fa-times"
+                                    style="pointer-events:none;"></i></a>
+                            <p>
+                                <h3 id="notification-text">Thanks for getting in touch!</h3>
+                            </p>
+                        </div>
+                    </div>
+
+
+                </section>
+            </div>
+            <div class="col-md-5">
+                <img class="img-fluid contact_img"
+                    src="https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                    alt="dog img">
+            </div>
+        </div>
+        <!-- contact us -->
+
+
+
+        <!-- footer -->
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <img class="mb-2" src="/docs/4.5/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
+                    <small class="d-block mb-3 text-muted">&copy; 2017-2020</small>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Features</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Cool stuff</a></li>
+                        <li><a class="text-muted" href="#">Random feature</a></li>
+                        <li><a class="text-muted" href="#">Team feature</a></li>
+                        <li><a class="text-muted" href="#">Stuff for developers</a></li>
+                        <li><a class="text-muted" href="#">Another one</a></li>
+                        <li><a class="text-muted" href="#">Last time</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Resources</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Resource</a></li>
+                        <li><a class="text-muted" href="#">Resource name</a></li>
+                        <li><a class="text-muted" href="#">Another resource</a></li>
+                        <li><a class="text-muted" href="#">Final resource</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>About</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Team</a></li>
+                        <li><a class="text-muted" href="#">Locations</a></li>
+                        <li><a class="text-muted" href="#">Privacy</a></li>
+                        <li><a class="text-muted" href="#">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- footer -->
+
+
+
+        <!-- registration_form -->
+
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header border-bottom-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-title text-center">
+                            <h4>Event Name</h4>
+                        </div>
+                        <div class="d-flex flex-column text-center">
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="text1" placeholder="Your Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email1 "
+                                        placeholder="Your email address..." required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" id="tel1" placeholder="Your Contact Number"
+                                        required>
+                                </div>
+
+                                <button type="button" class="btn btn-info btn-block btn-round">Register</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- registration_form -->
+
+
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="index.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
+            <script>
+                baguetteBox.run('.cards-gallery', {
+                    animation: 'slideIn'
+                });
+            </script>
+
 
 
 
